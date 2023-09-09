@@ -2,51 +2,51 @@ const ruleSet=document.getElementById("ruleset")
 const cardArray=[
   {
     name:'pikachu',
-    img:'/pikachu025.png'
+    img:'pikachu025.png'
   },
   {
     name:'charmander',
-    img:'/charmander004.png'
+    img:'charmander004.png'
   },
   {
    name:'bulbasaur',
-   img:'/bulbasaur001.png'
+   img:'bulbasaur001.png'
   },
   {
     name:'cubone',
-    img:'/cubone104.png'
+    img:'cubone104.png'
   },
   {
     name:'eevee',
-    img:'/eevee133.png'
+    img:'eevee133.png'
   },
   {
     name:'mewtwo',
-    img:'/mewtwo150.png'
+    img:'mewtwo150.png'
   },
   {
     name: 'pikachu',
-    img: '/pikachu025.png'
+    img: 'pikachu025.png'
   },
   {
     name: 'charmander',
-    img: '/charmander004.png'
+    img: 'charmander004.png'
   },
   {
     name: 'bulbasaur',
-    img: '/bulbasaur001.png'
+    img: 'bulbasaur001.png'
   },
   {
     name: 'cubone',
-    img: '/cubone104.png'
+    img: 'cubone104.png'
   },
   {
     name: 'eevee',
-    img: '/eevee133.png'
+    img: 'eevee133.png'
   },
   {
     name: 'mewtwo',
-    img: '/mewtwo150.png'
+    img: 'mewtwo150.png'
   }
   ]
 const cardChosen=[]
@@ -60,7 +60,7 @@ const gridDisplay=document.querySelector('#grid')
 function createBoard(){
   for(let i=0;i<12;i++){
     const card = document.createElement('img')
-    card.setAttribute('src','/pokeball.png')
+    card.setAttribute('src','pokeball.png')
     card.setAttribute('data-id',i)
     card.addEventListener('click',flipCard)
     gridDisplay.append(card)
@@ -92,8 +92,8 @@ function checkMatch(){
     }
   }
   else{
-    cards[cardChosenId[0]].setAttribute('src','/pokeball.png')
-    cards[cardChosenId[1]].setAttribute('src','/pokeball.png')
+    cards[cardChosenId[0]].setAttribute('src','pokeball.png')
+    cards[cardChosenId[1]].setAttribute('src','pokeball.png')
     cardChosen.pop()
     cardChosenId.pop()
     cardChosen.pop()
